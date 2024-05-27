@@ -126,6 +126,10 @@ body {
   border: 2px solid #000000;
 }
 
+.section-div bnt {
+backgrond-color: #0D1117;
+}
+
 .section-div div {
   margin-top: 120px;
   align-self: center;
