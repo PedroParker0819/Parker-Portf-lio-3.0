@@ -76,7 +76,7 @@ body {
 }
 
 .nav-item a {
-  color: #0D1117;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -124,10 +124,6 @@ body {
   border-radius: 700px;
   padding: 2px;
   border: 2px solid #000000;
-}
-
-.section-div bnt {
-backgrond-color: #0D1117;
 }
 
 .section-div div {
@@ -219,7 +215,7 @@ p {
 
 .btn {
   display: inline-block;
-  background-color: #fff;
+  background-color: #7e7e7e;
   color: #dc143c;
   padding: 15px 40px;
   text-decoration: none;
@@ -258,7 +254,7 @@ p {
   width: 300px;
   margin: 20px;
   padding: 30px;
-  background-color: ##0D1117;
+  background-color: #777777;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -284,7 +280,7 @@ p {
 
 .service p {
   font-size: 16px;
-  color: #555;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -307,7 +303,7 @@ p {
   width: 300px;
   margin: 20px;
   padding: 30px;
-  background-color: ##0D1117;
+  background-color: #919191;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -338,7 +334,6 @@ p {
 
 .skill p {
   font-size: 16px;
-  color: #00000;
   margin-top: 20px;
 }
 
@@ -350,9 +345,67 @@ p {
   align-items: center;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
 
-/* Estilo para o footer */
-/* Estilo para o footer */
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.titulo-projetos {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #dc143c;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #aa0f2b;
+}
+
 footer {
   background-color: #000;
   color: #fff;
