@@ -29,3 +29,13 @@ function writeTitle(){
   activeWorld(title);
 }
 writeTitle();
+
+window.onload = function() {
+  const vlibrasScript = document.createElement('script');
+  vlibrasScript.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
+  document.head.appendChild(vlibrasScript);
+  
+  vlibrasScript.onload = function() {
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  };
+};
