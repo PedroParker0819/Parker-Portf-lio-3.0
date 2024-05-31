@@ -251,7 +251,7 @@ p {
 }
 
 .service {
-  width: 300px;
+  width: 290px;
   margin: 20px;
   padding: 30px;
   background-color: #777777;
@@ -262,8 +262,14 @@ p {
 
 
 .service:hover {
-  background-color: #dc143c;
-  transition: transform 0.3s ease;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+  border-width: 2px solid red;
+  border-color: #dc143c;
+  background-color: #000000;
+  transition: .5s ease-in-out;
+  color: #ffffff;
 }
 
 
@@ -278,11 +284,6 @@ p {
   margin-bottom: 10px;
 }
 
-.service p {
-  font-size: 16px;
-  color: #000000;
-  margin-bottom: 20px;
-}
 
 /* Estilo para a seção de conhecimento */
 #conhecimento {
@@ -300,7 +301,7 @@ p {
 }
 
 .skill {
-  width: 300px;
+  width: 290px;
   margin: 20px;
   padding: 30px;
   background-color: #919191;
@@ -310,7 +311,14 @@ p {
 }
 
 .skill:hover {
-  background-color: #dc143c;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+  border-width: 2px solid red;
+  border-color: #dc143c;
+  background-color: #000000;
+  transition: .5s ease-in-out;
+  color: #ffffff;
 }
 
 .skill h3 {
@@ -374,9 +382,9 @@ p {
 }
 
 .project img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -445,6 +453,20 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
+}
+
+/* Estilizando o botão do VLibras Widget */
+.vw-access-button {
+  background-color: #dc143c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.vw-access-button:hover {
+  background-color: #aa1133;
 }
 
 @media only screen and (max-width: 600px) {
